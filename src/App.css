@@ -1,0 +1,179 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+background-image: url("https://img.freepik.com/premium-photo/free-abstract-plain-white-background-wallpaper_1097558-40326.jpg");
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: var(--text-color);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+
+.passwordBox 
+{
+width: 350px;
+min-height: 400px;
+padding: 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+border-radius: 16px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+background-color: rgb(255, 255, 255);
+}
+.passwordBox h3
+{
+margin-bottom: 8px;
+font-size: 25px;
+}
+.passwordBoxin {
+display: flex;
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+.passwordBoxin input {
+flex: 1;
+padding: 10px;
+border: 2px solid #0077b6 ;
+color: black;
+border-bottom-left-radius: 6px;
+border-top-left-radius: 6px;
+outline: none;
+}
+
+.passwordBoxin button {
+font-size: 17px;
+background-color: #0077b6;
+color: white;
+border: none;
+border-bottom-right-radius: 6px;
+border-top-right-radius: 6px;
+outline:none;
+padding: 10px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.passwordBoxin button:hover {
+background-color: #006297;
+color:white;
+
+}
+
+.passLength {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.passLength label {
+  flex: 1;
+  text-align: left;
+}
+
+.passLength input[type="range"] {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.btn {
+width: 100%;
+padding: 12px;
+background-color: #0077b6;
+border: none;
+color: white;
+font-size: 19px;
+cursor: pointer;
+border-radius: 6px;
+margin-top: 25px;
+outline: none;
+}
+
+.btn:hover {
+background-color: #ffffff;
+border: 2px solid #0077b6;
+color: #0077b6;
+
+}
+
+@media (max-width: 1024px) {
+.passwordBox {
+  max-width: 400px;
+  padding: 18px;
+}
+}
+
+@media (max-width: 768px) {
+body {
+  padding: 15px;
+}
+.passwordBox {
+  max-width: 350px;
+  padding: 16px;
+}
+.passLength {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.passLength label {
+  flex: 1;
+  text-align: left;
+}
+.passLength input[type="range"] {
+  flex: 1;
+  margin-left: 10px;
+}
+}
+
+@media (max-width: 480px) {
+.passwordBox {
+  max-width: 280px;
+  height: 120px;
+  padding: 14px;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+.passLength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.passLength label {
+  flex: 1;
+  text-align: left;
+}
+.passLength input[type="range"] {
+  flex: 1;
+  margin-left: 10px;
+}
+.btn {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+}
+
+@media (max-width: 280px) 
+{
+.passwordBox 
+{
+  height: 40px;
+  max-width: 250px;
+  padding: 23px 12px 12px 12px;
+}
+}
