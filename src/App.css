@@ -160,12 +160,22 @@ h3 {
 {
   height: 40px;
   max-width: 250px;
-  padding: 23px 12px 12px 12px;
+  padding: 23px 10px 12px 10px;
+}
+.passwordBoxin input {
+/* flex: 1; */
+padding: 10px;
+border: 2px solid #0077b6 ;
+color: black;
+border-bottom-left-radius: 6px;
+border-top-left-radius: 6px;
+outline: none;
 }
 .passwordBoxin button {
 font-size: 14px;
-padding: 5px;
+padding: 3px;
 border-bottom-right-radius: 8px;
 border-top-right-radius: 8px;
+text-align: start;
 }
 }
